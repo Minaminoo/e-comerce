@@ -23,6 +23,15 @@ export const ProductContextProvidor = (props) => {
     }
     return totalAmount;
   }
+  const getTotalCartNumber = () => {
+    let totalAmount = 0;
+    for (const item in cartItem) {
+      if (cartItem[item] > 0) {
+         totalAmount += cartItem[item] ;
+      }
+    }
+    return totalAmount;
+  }
   const addToCart = (itemId) => {
     setCartItem((prev) => ({...prev, [itemId]: prev[itemId] + 1}));
   }
@@ -32,7 +41,7 @@ export const ProductContextProvidor = (props) => {
   const updateCartItem = (newAmount, itemId) => {
     setCartItem((prev) => ({...prev, [itemId] : newAmount}));
   }
-  const contextValue = {cartItem, addToCart, removeFromCart, updateCartItem, getTotalCartAmount}
+  const contextValue = {cartItem, addToCart, removeFromCart, updateCartItem, getTotalCartAmount, getTotalCartNumber}
   return (
     <ProductContext.Provider value={contextValue}>{ props.children }</ProductContext.Provider>
   )

@@ -38,12 +38,19 @@ body {
 .h2 {
   padding: 15px 90px;
 }
+.btns {
+  display: flex;
+}
 .btns a {
   padding: 7px;
   font-size: medium;
   color: #000;
   font-weight: bold;
   cursor: pointer;
+}
+.cart{
+  display: flex;
+  justify-content: center;
 }
 .cart-icon {
   width: 30px;
@@ -69,12 +76,12 @@ body {
   background: #000;
   color: #fff;
   padding: 11px;
+  border-radius: 5px;
   font-size: large;
 }
 .btn:hover {
   color: #000;
   background: #fff;
-  border: 3px solid #000;
 }
 .banner {
   height: 400px;
@@ -90,13 +97,14 @@ body {
   border: 3px solid gray;
   margin: 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 .card:hover {
-  border: 3px solid #000;
   transition: all 0.15s ease-in;
 }
 .image {
   width: 250px;
+  border-radius: 5px;
   background-color: #fff;
 }
 .counter {
@@ -196,7 +204,7 @@ body {
   width: 20px;
 }
 .product {
-  height: 38rem;
+  height: 45rem;
   margin: 3rem 1rem;
   display: flex;
 }
@@ -259,14 +267,6 @@ body {
   background: #fff;
   font-size: small;
   font-weight: bold;
-}
-.learn-more:hover {
-  color: #b6002c;
-  background: #fff;
-}
-.addToCart-btn:hover {
-  background: #000;
-  color: #fff;
 }
 .buy-div {
   display: flex;
@@ -357,13 +357,12 @@ body {
   background: #fff;
   color: #000;
 }
-.Home {
+/* .Home {
   margin: 5rem;
   color: #000;
   align-items: center;
   display: flex;
-  width: 4rem;
-}
+} */
 .Home:hover {
   border-bottom: 2px solid #000;
 }

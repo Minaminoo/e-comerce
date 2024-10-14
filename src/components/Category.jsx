@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export const Category = () => {
   return(<div>
-    <Link to="/" className="Home"><img src="/images/arrow.jpg" alt="arrow" className="arrow" />Home</Link>
+    <Link to="/" className="Home">Back to Home</Link>
     <div className="products">
       { products.map((product) => (<Product data={product} />)) }
     </div>
