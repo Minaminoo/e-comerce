@@ -13,7 +13,7 @@ export const Navbar = () => {
         <Link to="/Category"> CATEGORIES </Link>
         <Link to="Category/productPage/1"> PRODUCT PAGE </Link>
         <Link to="/Cart" className="cart"><img src="/images/Cart.jpg" alt="cart" className="cart-icon" /> 
-          <p className='notification'><p className='notification'>{totalAmount}</p></p>
+          <p className='notification'>{totalAmount}</p>
         </Link>
       </div>
       </div>
